@@ -45,6 +45,7 @@ nav > a:hover {
 .name-text {
   font-size: 5rem;
   padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .description-text {
@@ -104,8 +105,8 @@ nav > a:hover {
 
 .overlay {
   position: fixed;
-  top: 0;
-  left: -100%;
+  top: -150%;
+  left: 0;
   width: 100%;
   min-height: 100vh;
   display: block;
@@ -116,7 +117,7 @@ nav > a:hover {
 }
 
 .overlay.is-active {
-  left: 0;
+  top: 0;
 }
 
 .overlay > header {
