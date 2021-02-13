@@ -8,7 +8,7 @@ window.onload = () => {
 
     overlays.forEach((overlay) => {
       if (overlay.id == overlayType) {
-        overlay.classList.toggle("is-active");
+        overlay.classList.add("is-active");
       }
     });
   });

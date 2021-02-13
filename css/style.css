@@ -13,6 +13,7 @@ body {
   background: url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #fff;
+  overflow: hidden;
 }
 
 nav {
