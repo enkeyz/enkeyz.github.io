@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", "Roboto", sans-serif;
+  line-height: 1.4rem;
+  background: url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.name-text {
+  font-size: 5rem;
+  padding: 2rem;
+}
+
+.description-text {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.main-page-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+
+.main-page-container-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-media-icons a {
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.overlay-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-buttons a {
+  color: #fff;
+}
+
+.work-button {
+  position: fixed;
+  right: 0;
+  bottom: 40vh;
+  font-size: 1.6rem;
+  transform: rotate(90deg);
+  padding: 2rem;
+}
+
+.about-button {
+  position: fixed;
+  left: 0;
+  bottom: 40vh;
+  font-size: 1.6rem;
+  transform: rotate(-90deg);
+  padding: 2rem;
+}
+
+.contact-button {
+  position: fixed;
+  left: 46vw;
+  bottom: 0;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.about-overlay-container {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: 0.4s;
+}
+
+.about-overlay-container.is-active {
+  left: 0;
+}
+
+.work-overlay-container {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: 0.4s;
+}
+
+.work-overlay-container.is-active {
+  left: 0;
+}
+
+.contact-overlay-container {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: 0.4s;
+}
+
+.contact-overlay-container.is-active {
+  left: 0;
+}
