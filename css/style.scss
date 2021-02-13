@@ -63,6 +63,13 @@ body {
   color: #fff;
 }
 
+.close-btn {
+  font-size: 2rem;
+  padding: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 .work-button {
   position: fixed;
   right: 0;
@@ -89,7 +96,7 @@ body {
   padding: 2rem;
 }
 
-.about-overlay-container {
+.overlay {
   position: fixed;
   top: 0;
   left: -100%;
@@ -101,38 +108,6 @@ body {
   transition: 0.4s;
 }
 
-.about-overlay-container.is-active {
-  left: 0;
-}
-
-.work-overlay-container {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  min-height: 100vh;
-  display: block;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.95);
-  transition: 0.4s;
-}
-
-.work-overlay-container.is-active {
-  left: 0;
-}
-
-.contact-overlay-container {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  min-height: 100vh;
-  display: block;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.95);
-  transition: 0.4s;
-}
-
-.contact-overlay-container.is-active {
+.overlay.is-active {
   left: 0;
 }

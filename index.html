@@ -26,21 +26,24 @@
         </div>
       </div>
       <div class="overlay-buttons">
-        <a class="about-button" href="#">About</a>
-        <a class="work-button" href="#">Work</a>
+        <a class="overlay-button about-button" href="#">About</a>
+        <a class="overlay-button work-button" href="#">Work</a>
         <footer>
-          <a class="contact-button" href="#">Contact</a>
+          <a class="overlay-button contact-button" href="#">Contact</a>
         </footer>
       </div>
     </header>
     <div class="overlay-container">
-      <div class="about-overlay-container">
+      <div id="about" class="overlay">
+        <i class="fas fa-times-circle close-btn"></i>
         <h1>About me</h1>
       </div>
-      <div class="work-overlay-container">
+      <div id="work" class="overlay">
+        <i class="fas fa-times-circle close-btn"></i>
         <h1>Some projects</h1>
       </div>
-      <div class="contact-overlay-container">
+      <div id="contact" class="overlay">
+        <i class="fas fa-times-circle close-btn"></i>
         <h1>Contact me</h1>
       </div>
     </div>

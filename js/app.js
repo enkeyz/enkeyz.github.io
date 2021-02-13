@@ -1,22 +1,23 @@
 window.onload = () => {
-  const about_button = document.querySelector(".about-button");
-  const about_overlay = document.querySelector(".about-overlay-container");
+  const overlayButtons = document.querySelector(".overlay-buttons");
+  const overlays = document.querySelectorAll(".overlay");
+  const closeButtons = document.querySelectorAll(".close-btn");
 
-  about_button.addEventListener("click", () => {
-    about_overlay.classList.toggle("is-active");
+  overlayButtons.addEventListener("click", (event) => {
+    const overlayType = event.target.textContent.toLowerCase();
+
+    overlays.forEach((overlay) => {
+      if (overlay.id == overlayType) {
+        overlay.classList.toggle("is-active");
+      }
+    });
   });
 
-  const work_button = document.querySelector(".work-button");
-  const work_overlay = document.querySelector(".work-overlay-container");
-
-  work_button.addEventListener("click", () => {
-    work_overlay.classList.toggle("is-active");
-  });
-
-  const contact_button = document.querySelector(".contact-button");
-  const contact_overlay = document.querySelector(".contact-overlay-container");
-
-  contact_button.addEventListener("click", () => {
-    contact_overlay.classList.toggle("is-active");
+  closeButtons.forEach((closeButton) => {
+    closeButton.addEventListener("click", (event) => {
+      overlays.forEach((overlay) => {
+        overlay.classList.remove("is-active");
+      });
+    });
   });
 };
