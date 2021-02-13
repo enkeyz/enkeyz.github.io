@@ -21,13 +21,20 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 10vh;
+  text-align: center;
 }
 
 nav > a {
   color: #fff;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+}
+
+nav > a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .name-text {
@@ -43,6 +50,7 @@ nav > a {
 .main-page-container {
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
+  text-align: center;
 }
 
 .main-page-container-content {
@@ -88,4 +96,16 @@ nav > a {
 
 .overlay.is-active {
   left: 0;
+}
+
+.overlay > header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay > header > h1 {
+  font-size: 3rem;
+  padding-top: 2rem;
 }
