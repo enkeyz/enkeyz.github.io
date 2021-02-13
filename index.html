@@ -15,6 +15,11 @@
   </head>
   <body>
     <header class="main-page-container">
+      <nav class="overlay-buttons">
+        <a class="overlay-button about-button" href="#">About</a>
+        <a class="overlay-button work-button" href="#">Work</a>
+        <a class="overlay-button contact-button" href="#">Contact</a>
+      </nav>
       <div class="main-page-container-content">
         <h1 class="name-text">Norbert Klar</h1>
         <p class="description-text">Software engineer / Web developer</p>
@@ -25,25 +30,24 @@
           <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-      <div class="overlay-buttons">
-        <a class="overlay-button about-button" href="#">About</a>
-        <a class="overlay-button work-button" href="#">Work</a>
-        <footer>
-          <a class="overlay-button contact-button" href="#">Contact</a>
-        </footer>
-      </div>
     </header>
     <div class="overlay-container">
       <div id="about" class="overlay">
-        <i class="fas fa-times-circle close-btn"></i>
+        <header>
+          <i class="fas fa-times-circle close-btn"></i>
+        </header>
         <h1>About me</h1>
       </div>
       <div id="work" class="overlay">
-        <i class="fas fa-times-circle close-btn"></i>
+        <header>
+          <i class="fas fa-times-circle close-btn"></i>
+        </header>
         <h1>Some projects</h1>
       </div>
       <div id="contact" class="overlay">
-        <i class="fas fa-times-circle close-btn"></i>
+        <header>
+          <i class="fas fa-times-circle close-btn"></i>
+        </header>
         <h1>Contact me</h1>
       </div>
     </div>

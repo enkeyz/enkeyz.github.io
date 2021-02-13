@@ -15,6 +15,25 @@ body {
   color: #fff;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav > a {
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 .name-text {
   font-size: 5rem;
   padding: 2rem;
@@ -67,55 +86,11 @@ body {
   color: #fff;
 }
 
-.overlay-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.overlay-buttons a {
-  color: #fff;
-}
-
 .close-btn {
   font-size: 2rem;
   padding: 2rem;
   color: #fff;
   cursor: pointer;
-}
-
-.work-button {
-  position: fixed;
-  right: 0;
-  bottom: 40vh;
-  font-size: 1.6rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  padding: 2rem;
-}
-
-.about-button {
-  position: fixed;
-  left: 0;
-  bottom: 40vh;
-  font-size: 1.6rem;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  padding: 2rem;
-}
-
-.contact-button {
-  position: fixed;
-  left: 46vw;
-  bottom: 0;
-  font-size: 1.6rem;
-  padding: 2rem;
 }
 
 .overlay {
