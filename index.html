@@ -59,7 +59,24 @@
         <header>
           <i class="fas fa-times-circle close-btn"></i>
           <h1>Contact me</h1>
-          <p>Coming...</p>
+          <div>
+            <form
+              id="my-form"
+            >
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required/>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <input type="text" name="message" required/>
+              </div>
+              <div class="form-group">
+                <button id="my-form-button" class="btn">Submit</button>
+                <p id="my-form-status"></p>
+              </div>
+            </form>
+          </div>
         </header>
       </div>
     </div>
