@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
-* {
+*,
+*::after,
+*::before {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 body {
+  box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.4rem;
   color: #fff;
@@ -18,9 +20,9 @@ body {
   background-position: center; }
   .main-page-content .section-about {
     position: absolute;
-    top: 35%;
-    left: 35%;
-    transform: translateX(-50%), translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center; }
 
 .navbar {
