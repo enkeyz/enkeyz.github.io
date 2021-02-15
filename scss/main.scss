@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 * {
@@ -8,36 +7,54 @@
 }
 
 body {
-  font-family: "Josefin Sans", "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1.4rem;
-  background: url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg") no-repeat
-    center center/cover;
-  height: 100vh;
   color: #fff;
   overflow: hidden;
 }
 
-nav {
+.main-page-content {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .section-about {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translateX(-50%), translateY(-50%);
+    text-align: center;
+  }
+}
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
   text-align: center;
+
+  .overlay-btn {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
 }
 
-nav > a {
-  color: #fff;
-  padding: 1rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
-}
-
-nav > a:hover {
-  border-bottom: 1px solid ;
-}
-
-.btn {
+.btn--white {
   color: #222;
   background-color: #fff;
   padding: 1rem 2rem;
@@ -46,21 +63,15 @@ nav > a:hover {
   font-size: 2rem;
 }
 
-.name-text {
+.heading-primary {
   font-size: 5rem;
   padding: 2rem;
   margin-bottom: 1rem;
 }
 
-.description-text {
+.heading-primary--main {
   padding: 1rem;
   font-size: 2rem;
-}
-
-.main-page-container {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  text-align: center;
 }
 
 .main-page-container-content {
@@ -112,7 +123,7 @@ nav > a:hover {
   top: 0;
 }
 
-.overlay > header {
+.overlay .header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,37 +131,17 @@ nav > a:hover {
   font-size: 2rem;
 }
 
-.overlay > header > h1 {
+.overlay .header > h1 {
   font-size: 3rem;
   padding-top: 2rem;
   margin-bottom: 4rem;
 }
 
-.overlay > header > div {
+.overlay .header > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   text-align: center;
-}
-
-label {
-  padding: 1rem;
-}
-
-.form-group {
-  padding: 2rem;
-}
-
-.form-group > label {
-  display: inline-block;
-  padding: 1rem 0;
-}
-
-input {
-  font-size: 2rem;
-  border: none;
-  width: 100%;
-  padding: 1rem;
 }

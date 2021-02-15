@@ -1,0 +1,22 @@
+{
+  "name": "enkeyz.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enkeyz/enkeyz.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enkeyz/enkeyz.github.io/issues"
+  },
+  "homepage": "https://github.com/enkeyz/enkeyz.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
