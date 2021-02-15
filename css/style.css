@@ -92,10 +92,9 @@ body {
   transition: 0.4s; }
   .overlay.is-active {
     top: 0; }
-
-.overlay .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  font-size: 2rem; }
+  .overlay .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem; }
