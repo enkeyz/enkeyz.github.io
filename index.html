@@ -12,55 +12,58 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Norbert Klar's portfolio</title>
+    <title>Norbert Klar's website</title>
   </head>
 
   <body>
-    <div class="main-page-content">
-      <header class="header">
-        <nav class="navbar overlay-buttons">
-          <a class="overlay-btn" href="#">About</a>
-          <a class="overlay-btn" href="#">Work</a>
-          <a class="overlay-btn" href="#">Contact</a>
-        </nav>
-      </header>
+    <div class="background-img"></div>
+    <header class="header">
+      <nav class="navbar">
+        <a class="btn--overlay" href="#about">About</a>
+        <a class="btn--overlay" href="#work">Work</a>
+        <a class="btn--overlay" href="#contact">Contact</a>
+      </nav>
+    </header>
 
-      <main>
-        <section class="section-about u-center-text">
-          <h1 class="heading-primary">Norbert Klar</h1>
-          <p class="heading-primary--main">Software engineer / Web developer</p>
-          <div class="social-media-icons">
-            <a href="https://github.com/enkeyz" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="https://twitter.com/_enkeyz" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-          </div>
-        </section>
-      </main>
-    </div>
+    <main class="main">
+      <section class="section-about u-center-text">
+        <h1 class="heading-primary">Norbert Klar</h1>
+        <p class="heading-primary--main">Software engineer / Web developer</p>
+        <div class="social-media-icons">
+          <a href="https://github.com/enkeyz" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://twitter.com/_enkeyz" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+      </section>
+    </main>
 
     <div class="overlay-container">
       <div id="about" class="overlay">
         <header class="header">
-          <i class="fas fa-times-circle close-btn"></i>
+          <a href="#" class="btn--close"><i class="fas fa-times-circle"></i></a>
           <h1 class="heading-secondary">About me</h1>
           <p>Coming...</p>
         </header>
       </div>
       <div id="work" class="overlay">
         <header class="header">
-          <i class="fas fa-times-circle close-btn"></i>
+          <a href="#" class="btn--close"
+            ><i class="fas fa-times-circle close-btn"></i
+          ></a>
           <h1 class="heading-secondary">Some projects</h1>
           <p>Coming...</p>
         </header>
       </div>
       <div id="contact" class="overlay">
         <header class="header">
-          <i class="fas fa-times-circle close-btn"></i>
+          <a href="#" class="btn--close"
+            ><i class="fas fa-times-circle close-btn"></i
+          ></a>
           <h1 class="heading-secondary">Contact me</h1>
         </header>
       </div>

@@ -36,14 +36,14 @@ body {
   text-align: center;
 }
 
-.overlay-btn {
+.btn--overlay {
   color: #fff;
   padding: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
-.overlay-btn:hover {
+.btn--overlay:hover {
   border-bottom: 1px solid;
 }
 
@@ -56,7 +56,7 @@ body {
   font-size: 2rem;
 }
 
-.close-btn {
+.btn--close {
   font-size: 2rem;
   padding: 2rem;
   color: #fff;
@@ -84,12 +84,20 @@ body {
   height: 10vh;
 }
 
-.main-page-content {
-  position: relative;
+.background-img {
+  position: fixed;
   height: 100vh;
+  width: 100vw;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  z-index: -1;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 .section-about {
@@ -106,11 +114,13 @@ body {
   width: 100%;
   min-height: 100vh;
   display: block;
-  z-index: 999;
   background-color: rgba(0, 0, 0, 0.95);
-  transition: 0.4s;
+  z-index: 999;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
 }
-.overlay.is-active {
+.overlay:target {
+  visibility: visible;
   top: 0;
 }
 .overlay .header {

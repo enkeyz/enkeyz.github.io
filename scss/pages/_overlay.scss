@@ -5,11 +5,13 @@
   width: 100%;
   min-height: 100vh;
   display: block;
-  z-index: 999;
   background-color: rgba($color-black, 0.95);
-  transition: 0.4s;
+  z-index: 999;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
 
-  &.is-active {
+  &:target {
+    visibility: visible;
     top: 0;
   }
 
