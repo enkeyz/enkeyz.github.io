@@ -3,44 +3,52 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.4rem;
   color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .u-center-text {
-  text-align: center; }
+  text-align: center;
+}
 
 .main-page-content {
   position: relative;
   height: 100vh;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
   background-size: cover;
-  background-position: center; }
-  .main-page-content .section-about {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  background-position: center;
+}
+.main-page-content .section-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh; }
+  height: 10vh;
+}
 
 .overlay-btn {
   color: #fff;
   padding: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0); }
-  .overlay-btn:hover {
-    border-bottom: 1px solid; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.overlay-btn:hover {
+  border-bottom: 1px solid;
+}
 
 .btn--white {
   color: #222;
@@ -48,37 +56,44 @@ body {
   padding: 1rem 2rem;
   border: none;
   font-family: "Josefin Sans";
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .heading-primary {
   font-size: 5rem;
   padding: 2rem;
-  margin-bottom: 1rem; }
-  .heading-primary--main {
-    padding: 1rem;
-    font-size: 2rem; }
-
+  margin-bottom: 1rem;
+}
+.heading-primary--main {
+  padding: 1rem;
+  font-size: 2rem;
+}
 .heading-secondary {
   font-size: 3rem;
   padding: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 
 .social-media-icons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
-  .social-media-icons a {
-    padding: 1rem;
-    font-size: 1.4rem;
-    color: #fff; }
-    .social-media-icons a:hover {
-      color: #93abd3; }
+  justify-content: space-evenly;
+}
+.social-media-icons a {
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.social-media-icons a:hover {
+  color: #93abd3;
+}
 
 .close-btn {
   font-size: 2rem;
   padding: 2rem;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .overlay {
   position: fixed;
@@ -89,12 +104,17 @@ body {
   display: block;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.95);
-  transition: 0.4s; }
-  .overlay.is-active {
-    top: 0; }
-  .overlay .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    font-size: 2rem; }
+  transition: 0.4s;
+}
+.overlay.is-active {
+  top: 0;
+}
+.overlay .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
