@@ -8,35 +8,32 @@
 
 body {
   box-sizing: border-box;
+}
+
+body {
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.4rem;
   color: #fff;
   overflow: hidden;
 }
 
+.heading-primary {
+  font-size: 5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.heading-primary--main {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.heading-secondary {
+  font-size: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
 .u-center-text {
   text-align: center;
-}
-
-.main-page-content {
-  position: relative;
-  height: 100vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.main-page-content .section-about {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10vh;
 }
 
 .overlay-btn {
@@ -59,19 +56,11 @@ body {
   font-size: 2rem;
 }
 
-.heading-primary {
-  font-size: 5rem;
-  padding: 2rem;
-  margin-bottom: 1rem;
-}
-.heading-primary--main {
-  padding: 1rem;
+.close-btn {
   font-size: 2rem;
-}
-.heading-secondary {
-  font-size: 3rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 2rem;
+  color: #fff;
+  cursor: pointer;
 }
 
 .social-media-icons {
@@ -88,11 +77,26 @@ body {
   color: #93abd3;
 }
 
-.close-btn {
-  font-size: 2rem;
-  padding: 2rem;
-  color: #fff;
-  cursor: pointer;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+.main-page-content {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .overlay {
