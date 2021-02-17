@@ -1,11 +1,14 @@
 // TODO make it responsive
 @import "abstracts/variables";
+@import "abstracts/mixins";
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 @import "components/button";
 @import "components/social-media";
+@import "components/spinner";
 @import "layout/header";
 @import "pages/home";
 @import "pages/overlay";
+@import "pages/loading-screen";
