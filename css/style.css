@@ -11,6 +11,27 @@ body {
   background-color: #000;
 }
 
+@media (max-width: 112.5rem) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25rem) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5rem) {
+  html {
+    font-size: 30%;
+  }
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.4rem;
