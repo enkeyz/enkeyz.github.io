@@ -72,16 +72,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 10vh;
 }
 .social-media__button {
   padding: 1rem;
   font-size: 1.4rem;
   color: #fff;
-  transition: 0.3s;
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 .social-media__button:hover {
-  color: #93abd3;
-  transform: scale(1.05);
+  transform: scale(1.15);
+}
+.social-media__button:focus {
+  outline: none;
+  transform: scale(1);
 }
 
 .navbar {

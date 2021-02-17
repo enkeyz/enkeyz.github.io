@@ -2,16 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 10vh;
 
   &__button {
     padding: 1rem;
     font-size: 1.4rem;
     color: $color-white;
-    transition: 0.3s;
+    transition: transform 0.3s;
+    backface-visibility: hidden;
+    will-change: transform;
 
     &:hover {
-      color: $color-blue-light;
-      transform: scale(1.05);
+      transform: scale(1.15);
+    }
+
+    &:focus {
+      outline: none;
+      transform: scale(1);
     }
   }
 }
