@@ -1,25 +1,24 @@
 const loading_screen = document.querySelector(".loading-screen");
-const tab_buttons = document.querySelectorAll(".btn--tab");
+const tab_button_container = document.querySelector(".tab-button-container");
+const tab_buttons =  document.querySelectorAll(".btn--tab");
 const tab_content_items = document.querySelectorAll(".tab-content__item");
 
 window.addEventListener("load", () => {
   setTimeout(() => {
-    loading_screen.classList.add('finished-loading')
+    loading_screen.classList.add("finished-loading");
   }, 1000);
 });
 
-tab_buttons.forEach((tab_button) =>
-  tab_button.addEventListener("click", () => {
-    deselectAllTabButton();
-    deselectAllTabs();
-    selectTab(tab_button);
-  })
-);
+tab_button_container.addEventListener("click", (event) => {
+  deselectAllTabButton();
+  deselectAllTabs();
+  selectTab(event.target);
+});
 
-const selectTab = (tab_button) => {
-  tab_button.classList.add("btn--tab--active");
+const selectTab = (button) => {
+  button.classList.add("btn--tab--active");
   document
-    .querySelector(`#${tab_button.id}-content`)
+    .querySelector(`#${button.id}-content`)
     .classList.add("tab-content__item--active");
 };
 
