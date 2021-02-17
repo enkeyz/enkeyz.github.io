@@ -189,6 +189,22 @@ body {
   z-index: -1;
 }
 
+.background-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100;
+  width: 100%;
+  z-index: -11;
+  opacity: 0.4;
+  overflow: hidden;
+}
+.background-vid__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .main {
   position: relative;
   height: 100vh;
