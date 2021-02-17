@@ -47,6 +47,10 @@ body {
 .btn--overlay:hover {
   border-bottom: 1px solid;
 }
+.btn--overlay:active {
+  background-color: #fff;
+  color: #000;
+}
 
 .btn--white {
   color: #222;
@@ -64,18 +68,20 @@ body {
   cursor: pointer;
 }
 
-.social-media-icons {
+.social-media {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.social-media-icons a {
+.social-media__button {
   padding: 1rem;
   font-size: 1.4rem;
   color: #fff;
+  transition: 0.3s;
 }
-.social-media-icons a:hover {
+.social-media__button:hover {
   color: #93abd3;
+  transform: scale(1.05);
 }
 
 .navbar {
