@@ -7,6 +7,7 @@
   background-color: rgba($color-black, 1);
   z-index: 9999;
   opacity: 1;
+  transition: .4s ease-out;
 
   .spinner-loader {
     position: absolute;
@@ -14,4 +15,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.finished-loading {
+  opacity: 0;
+  visibility: hidden;
 }

@@ -4,7 +4,7 @@ const tab_content_items = document.querySelectorAll(".tab-content__item");
 
 window.addEventListener("load", () => {
   setTimeout(() => {
-    loading_screen.style.display = "none";
+    loading_screen.classList.add('finished-loading')
   }, 1000);
 });
 

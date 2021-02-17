@@ -246,12 +246,18 @@ body {
   background-color: black;
   z-index: 9999;
   opacity: 1;
+  transition: 0.4s ease-out;
 }
 .loading-screen .spinner-loader {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.finished-loading {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
