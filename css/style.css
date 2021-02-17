@@ -36,6 +36,9 @@ body {
   overflow: hidden;
 }
 
+.heading {
+  text-align: center;
+}
 .heading-primary {
   font-size: 5rem;
   padding: 2rem;
@@ -54,6 +57,10 @@ body {
 }
 @media (max-width: 75rem) {
   .heading-primary--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 1.5rem;
     line-height: 1.3;
   }
@@ -203,10 +210,9 @@ body {
 }
 
 .background-vid {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100;
   width: 100%;
   z-index: -11;
   opacity: 0.4;
@@ -237,11 +243,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  display: block;
   background-color: black;
   z-index: 9999;
   opacity: 1;
-  visibility: visible;
 }
 .loading-screen .spinner-loader {
   position: absolute;

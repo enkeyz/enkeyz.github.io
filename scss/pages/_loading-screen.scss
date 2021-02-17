@@ -4,11 +4,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  display: block;
   background-color: rgba($color-black, 1);
   z-index: 9999;
   opacity: 1;
-  visibility: visible;
 
   .spinner-loader {
     position: absolute;
