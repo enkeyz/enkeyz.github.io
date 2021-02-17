@@ -1,15 +1,17 @@
-.social-media-icons {
+.social-media {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  a {
+  &__button {
     padding: 1rem;
     font-size: 1.4rem;
     color: $color-white;
+    transition: 0.3s;
 
     &:hover {
       color: $color-blue-light;
+      transform: scale(1.05);
     }
   }
 }

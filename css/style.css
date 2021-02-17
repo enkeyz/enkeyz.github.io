@@ -8,6 +8,7 @@
 
 body {
   box-sizing: border-box;
+  background-color: #000;
 }
 
 body {
@@ -88,6 +89,7 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
+  background-color: #000;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
   background-size: cover;
   background-position: center;

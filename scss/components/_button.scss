@@ -8,6 +8,11 @@
   &:hover {
     border-bottom: 1px solid;
   }
+
+  &:active {
+    background-color: $color-white;
+    color: $color-black;
+  }
 }
 
 .btn--white {
