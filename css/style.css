@@ -11,27 +11,24 @@ body {
   background-color: #000;
 }
 
-@media (max-width: 112.5rem) {
-  html {
+/* html {
+  @include respond(big-desktop) {
     font-size: 75%;
   }
-}
-@media (max-width: 75rem) {
-  html {
+
+  @include respond(tab-land) {
     font-size: 56.25%;
   }
-}
-@media (max-width: 56.25rem) {
-  html {
+
+  @include respond(tab-port) {
     font-size: 50%;
   }
-}
-@media (max-width: 37.5rem) {
-  html {
+
+  @include respond(phone) {
     font-size: 30%;
   }
 }
-
+ */
 body {
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.4rem;
@@ -58,19 +55,19 @@ body {
   text-align: center;
 }
 
-.btn--overlay {
+.btn--tab {
   color: #fff;
   padding: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
-.btn--overlay:hover {
+.btn--tab:hover {
   border-bottom: 1px solid;
 }
-.btn--overlay:active {
-  background-color: #fff;
-  color: #000;
+.btn--tab--active {
+  border-bottom: 1px solid white;
 }
 
 .btn--white {
@@ -87,6 +84,15 @@ body {
   padding: 2rem;
   color: #fff;
   cursor: pointer;
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.btn--close:hover {
+  transform: scale(1.1);
+}
+.btn--close:active {
+  transform: scale(0.9);
 }
 
 .social-media {
@@ -152,6 +158,24 @@ body {
   align-items: center;
   justify-content: center;
   height: 10vh;
+  background-color: black;
+}
+
+.tab-content__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.tab-content__item--active {
+  visibility: visible;
+  opacity: 1;
+}
+.tab-content__item--bg {
+  background-color: black;
 }
 
 .background-img {
@@ -171,35 +195,11 @@ body {
   width: 100vw;
 }
 
-.section-about {
+.section-home {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.overlay {
-  position: fixed;
-  top: -150%;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.95);
-  z-index: 99;
-  visibility: hidden;
-  transition: 0.4s ease-in-out;
-}
-.overlay:target {
-  visibility: visible;
-  top: 0;
-}
-.overlay .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  font-size: 2rem;
 }
 
 .loading-screen {

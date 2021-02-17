@@ -12,7 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/android-chrome-512x512.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/android-chrome-512x512.png"
+    />
     <title>Norbert Klar's website</title>
   </head>
 
@@ -30,64 +34,80 @@
     <div class="background-img"></div>
     <header class="header">
       <nav class="navbar">
-        <a class="btn--overlay" href="#about">About</a>
-        <a class="btn--overlay" href="#work">Work</a>
-        <a class="btn--overlay" href="#contact">Contact</a>
+        <a id="tab-home" class="btn--tab btn--tab--active">Home</a>
+        <a id="tab-about" class="btn--tab">About</a>
+        <a id="tab-work" class="btn--tab">Work</a>
+        <a id="tab-contact" class="btn--tab">Contact</a>
       </nav>
     </header>
 
     <main class="main">
-      <section class="section-about u-center-text">
-        <h1 class="heading-primary">Norbert Klar</h1>
-        <p class="heading-primary--main">Software engineer / Web developer</p>
-        <div class="social-media">
-          <a
-            class="social-media__button"
-            href="https://github.com/enkeyz"
-            target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            class="social-media__button"
-            href="https://twitter.com/_enkeyz"
-            target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a class="social-media__button" href=""
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a class="social-media__button" href=""
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
-      </section>
+      <div
+        id="tab-home-content"
+        class="tab-content__item tab-content__item--active"
+      >
+        <section class="section-home">
+          <h1 class="heading-primary">Norbert Klar</h1>
+          <p class="heading-primary--main">Software engineer / Web developer</p>
+          <div class="social-media">
+            <a
+              class="social-media__button"
+              href="https://github.com/enkeyz"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              class="social-media__button"
+              href="https://twitter.com/_enkeyz"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="social-media__button" href=""
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a class="social-media__button" href=""
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+
+      <div
+        id="tab-about-content"
+        class="tab-content__item tab-content__item--bg"
+      >
+        <section class="section-about">
+          <header class="header">
+            <h1 class="heading-secondary">About me</h1>
+            <p>Coming...</p>
+          </header>
+        </section>
+      </div>
+
+      <div
+        id="tab-work-content"
+        class="tab-content__item tab-content__item--bg"
+      >
+        <section class="section-work">
+          <header class="header">
+            <h1 class="heading-secondary">Some projects</h1>
+            <p>Coming...</p>
+          </header>
+        </section>
+      </div>
+
+      <div
+        id="tab-contact-content"
+        class="tab-content__item tab-content__item--bg"
+      >
+        <section class="section-contact">
+          <header class="header">
+            <h1 class="heading-secondary">Contact me</h1>
+            <p>Coming...</p>
+          </header>
+        </section>
+      </div>
     </main>
-    <div class="overlay-container">
-      <div id="about" class="overlay">
-        <header class="header">
-          <a href="#" class="btn--close"><i class="fas fa-times-circle"></i></a>
-          <h1 class="heading-secondary">About me</h1>
-          <p>Coming...</p>
-        </header>
-      </div>
-      <div id="work" class="overlay">
-        <header class="header">
-          <a href="#" class="btn--close"
-            ><i class="fas fa-times-circle close-btn"></i
-          ></a>
-          <h1 class="heading-secondary">Some projects</h1>
-          <p>Coming...</p>
-        </header>
-      </div>
-      <div id="contact" class="overlay">
-        <header class="header">
-          <a href="#" class="btn--close"
-            ><i class="fas fa-times-circle close-btn"></i
-          ></a>
-          <h1 class="heading-secondary">Contact me</h1>
-        </header>
-      </div>
-    </div>
 
     <script src="js/app.js"></script>
   </body>
