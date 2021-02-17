@@ -43,6 +43,7 @@ body {
 }
 @media (max-width: 75rem) {
   .heading-primary {
+    padding: 0 2rem;
     font-size: 4rem;
     line-height: 1.3;
   }
