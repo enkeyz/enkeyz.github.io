@@ -76,15 +76,14 @@ body {
 }
 
 .btn--tab {
+  position: relative;
   color: #fff;
   padding: 1rem;
   font-size: 1.2rem;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   cursor: pointer;
-}
-.btn--tab:hover {
-  border-bottom: 1px solid;
+  transition: 0.3s ease;
 }
 .btn--tab--active {
   border-bottom: 1px solid white;
@@ -227,7 +226,7 @@ body {
 
 .main {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
 }
 
