@@ -1,4 +1,4 @@
-.background-img {
+/* .background-img {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -12,22 +12,18 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
-}
+} */
 
-.background-vid {
+.bg-vid {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   z-index: -11;
   opacity: 0.4;
   overflow: hidden;
-
-  &__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+  object-fit: cover;
 }
 
 .main {
