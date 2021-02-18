@@ -112,13 +112,45 @@
       >
         <section class="section-contact">
           <header class="header">
-            <h1 class="heading-secondary">Contact me</h1>
-            <p>Coming...</p>
+            <h1 class="heading-secondary u-center-text">Contact me</h1>
           </header>
+          <div class="form-container u-center-text">
+            <form id="my-form" class="form">
+              <div class="form-group">
+                <label class="form-group__label">Email:</label>
+                <input
+                  class="form-group__input"
+                  type="email"
+                  name="_replyto"
+                  ,
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-group__label">Message:</label>
+                <textarea
+                  class="form-group__input"
+                  name="message"
+                  id="text"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button class="form-group__btn btn--white" id="my-form-button">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </section>
       </div>
     </main>
 
     <script src="js/app.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
