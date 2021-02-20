@@ -2,11 +2,15 @@
   position: relative;
   color: $color-white;
   padding: 1rem;
+  min-width: 4rem;
+  text-align: center;
   font-size: 1.2rem;
   text-decoration: none;
   border-bottom: 1px solid rgba($color-black, 0);
   cursor: pointer;
-  transition: 0.3s ease;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease;
+  will-change: transform;
 
   &--active {
     border-bottom: 1px solid rgba($color-white, 1);
