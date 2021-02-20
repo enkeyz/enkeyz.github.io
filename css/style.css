@@ -357,8 +357,8 @@ body {
 }
 
 .section-work {
-  height: 100%;
-  width: 100%;
+  height: 90vh;
+  width: 100vww;
   overflow-y: scroll;
 }
 .section-work::-webkit-scrollbar {
@@ -369,7 +369,7 @@ body {
 }
 .section-work::-webkit-scrollbar-thumb {
   background-color: grey;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .loading-screen {
