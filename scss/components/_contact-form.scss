@@ -1,5 +1,5 @@
 .form-container {
-  margin-top: 2rem;
+  margin-top: 2rem auto 0;
   padding: 0rem 1rem;
 
   @include respond(phone) {
@@ -12,12 +12,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 
   &-group {
+    min-width: 20rem;
+
     &__label {
       display: block;
       margin: 1rem 0;
       font-size: 1.5rem;
+
+      @include respond(phone) {
+        font-size: 1.2rem;
+      }
     }
 
     &__input {
@@ -30,6 +37,10 @@
       box-sizing: border-box;
       outline: none;
       width: 100%;
+
+      @include respond(phone) {
+        font-size: 1.2rem;
+      }
     }
 
     &__btn {
