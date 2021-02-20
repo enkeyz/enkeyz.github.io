@@ -27,10 +27,20 @@
       padding: 0.5rem 1rem;
       display: block;
       margin-bottom: 1rem;
+      outline: none;
+      border-bottom: 3px solid transparent;
       resize: none;
       box-sizing: border-box;
-      outline: none;
       width: 100%;
+      transition: 0.3s ease-in-out;
+
+      &:focus {
+        border-bottom: 3px solid $color-blue;
+      }
+
+      &:focus:invalid {
+        border-bottom: 3px solid $color-red;
+      }
 
       @include respond(phone) {
         font-size: 1.2rem;
@@ -38,7 +48,6 @@
     }
 
     &__btn {
-      margin-top: 1rem;
       outline: none;
     }
   }

@@ -208,10 +208,18 @@ body {
   padding: 0.5rem 1rem;
   display: block;
   margin-bottom: 1rem;
+  outline: none;
+  border-bottom: 3px solid transparent;
   resize: none;
   box-sizing: border-box;
-  outline: none;
   width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.form-group__input:focus {
+  border-bottom: 3px solid #007bff;
+}
+.form-group__input:focus:invalid {
+  border-bottom: 3px solid #dc3545;
 }
 @media (max-width: 37.5rem) {
   .form-group__input {
@@ -219,7 +227,6 @@ body {
   }
 }
 .form-group__btn {
-  margin-top: 1rem;
   outline: none;
 }
 
