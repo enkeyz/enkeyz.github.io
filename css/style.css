@@ -276,12 +276,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 4rem 2rem 0;
+  padding: 3rem 2rem 5rem;
   text-align: center;
 }
 .project-cards .card {
   position: relative;
-  width: 17rem;
+  min-width: 17rem;
   height: 13rem;
   margin: 4rem 1.5rem;
 }
@@ -384,6 +384,8 @@ body {
 }
 
 .section-work {
+  height: 100%;
+  width: 100%;
   overflow-y: scroll;
 }
 .section-work::-webkit-scrollbar {
