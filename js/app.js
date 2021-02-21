@@ -4,6 +4,7 @@ const loading_screen = document.querySelector(".loading-screen");
 const tab_button_container = document.querySelector(".tab-button-container");
 const tab_buttons = document.querySelectorAll(".btn--tab");
 const tab_content_items = document.querySelectorAll(".tab-content__item");
+const job_description = document.getElementById("job-description");
 
 window.addEventListener("load", () => {
   setTimeout(() => {

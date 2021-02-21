@@ -1,59 +1,82 @@
 .project-cards {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
+  padding: 4rem 2rem 0;
   text-align: center;
 
   .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1rem;
-    height: 20rem;
-    width: 15rem;
-    background-color: grey;
+    position: relative;
+    width: 17rem;
+    height: 13rem;
+    margin: 4rem 1.5rem;
 
-    &:hover {
-    }
-
-    &__title {
-      padding: 1rem;
-    }
-
-    &__img {
+    &__front {
       position: relative;
-      display: block;
+      background-color: grey;
+      position: absolute;
+      top: 0;
+      left: 0;
       height: 100%;
       width: 100%;
-      background-color: white;
-      transition: all 0.3s ease-in-out;
+      z-index: 2;
+      border-radius: 3px;
+      transition: transform 0.4s ease-in-out;
 
-      &:hover .card__img__overlay {
-        opacity: 1;
-        visibility: visible;
+      &__img {
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__back {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+
+      &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        opacity: 0;
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
       }
 
-      &__overlay {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+      &__background {
+        background-color: white;
+        border-radius: 3px;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         height: 100%;
-        color: white;
-        background-color: rgba(1, 1, 1, 0.7);
+        width: 100%;
         opacity: 0;
         visibility: hidden;
-        z-index: 11;
         transition: all 0.3s ease-in-out;
       }
+    }
+
+    &:hover .card__back__content {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &:hover .card__back__background {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1.1, 1.5);
+    }
+
+    &:hover .card__front {
+      transform: translateY(-6.5rem) scale(0.8);
     }
   }
 }
